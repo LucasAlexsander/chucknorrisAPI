@@ -87,23 +87,6 @@ function searchValor() {
 
 }
 
-/* API de Tradução */
-function apiTraducao() {
-    let api = new XMLHttpRequest;
-    api.open('POST', 'https://translation.googleapis.com/language/translate/v2');
-
-    api.onreadystatechange = () => {
-        if(api.readyState == 4 && api.status == 200) {
-            console.log(api.responseText)
-        }
-    }
-    api.send();    
-}
-apiTraducao();
-
-
-
-
 function apiFrasesRandom() {
     /* API para frases aleatórias */
     let api = new XMLHttpRequest;
