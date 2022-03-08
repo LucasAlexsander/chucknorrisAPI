@@ -5,20 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit= no">
     <script src="jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Meu arquivo JavaScript -->
     <script src="main.js"></script>
+    <!-- Meu arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Chuck Norris</title>
 </head>
 <body>
 
-    <div class="container">
+    <!-- Logo -->
+    <section class="mt-5">
+        <div class="container">
 
-    </div>
+            <div class="d-flex justify-content-center">
+                <a href="/">
+                    <img id="logoChuckNorris" class="hvr-buzz-out treminda" src="chucknorris_logo.png" onmouseover="tremerImg()" class="" alt="">
+                </a>
+            </div>
+    
+        </div>
+    </section>
 
-    <h1>Frases Chuck Norris</h1>
-    <p></p>
+    <!-- Textos -->
+    <section class="container my-5">
+        <h1 class="display-5 text-center formatacaoTexto textShadown">Frases Chuck Norris</h1>
 
-    <div id="select"></div>
+        <div class="mt-5">
+            
+            <div class="d-flex align-items-center">
+                <h3 class="formatacaoTexto">Frases aleatorias:</h3>
+                <button type="button" onclick="apiFrasesRandom()" class="btn btn-outline-dark buttonChuckNorris">Me de um novo...</button>
+            </div>
+            <p id="primeiroTexto"></p>
+
+        </div>
+    
+        <div class="divisor"></div>
+
+        <div id="select" class="d-flex input-group align-items-center justify-content-between">
+            <h3 class="formatacaoTexto me-2">Frases com escolha de categoria:</h3>
+        </div>
+        <div>
+            <p id="segundoTexto"></p>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="d-flex align-items-center flex-wrap justify-content-between">
+            <h3 class="formatacaoTexto col-7">Pesquisa de texto livre:</h3>
+
+            <div id="FrasesPesquisa" class="input-group">
+                <input id="searchInputValue" type="search" class="form-select btn-outline-dark buttonChuckNorris selectFormat w-25" placeholder="Pesquisar">
+                <button type="button" onclick="searchValor()" class="btn btn-outline-dark buttonChuckNorris">Enviar</button>
+            </div>
+        </div>
+
+        <div id="textosPesquisa"></div>
+
+    </section>
+
+    
 
 
 </body>

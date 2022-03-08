@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@font-face{
+    font-family: '04b_30';
+    src: url('FontsFree-Net-04B_30__.ttf') format('woff'),
+         url('FontsFree-Net-04B_30__.ttf') format('truetype')
+}
+
+body {
+    background: rgba(173, 216, 230, 0.5);
+}
+
+section div.container img {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+section div.container img:hover {
+    animation: tremida 0.6s linear infinite;
+}
+
+.formatacaoTexto {
+    font-family: '04b_30';
+    color: orangered;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-top: 15px;
+}
+.textShadown {     
+    text-shadow: 0px 0px 32px black;
+}
+
+.textFormat {
+    font-size: 20px;
+    text-indent: 3em;
+}
+
+.divisor {
+    width: 85%;
+    height: 1px;
+    background: lightgrey;
+    margin: 20px auto;
+}
+
+.buttonChuckNorris{
+    padding: 0px 10px;
+    height: 30px;
+    margin-left: 10px;
+    background: orangered;
+    font-family: '04b_30';
+    color: white;
+}
+.buttonChuckNorris:hover {
+    color: orangered;
+    background: white;
+}
+
+#selectId {
+    width: 10px;    
+    border-radius: .25em 0em 0em .25em;
+}
+
+#FrasesPesquisa input[type = 'search']::placeholder {
+    color: white;
+}
+
+#FrasesPesquisa {
+    width: 400px;
+}
+
+#FrasesPesquisa input[type = 'search']:hover {
+    background-color: orangered;
+    color: white;
+}
+
+@keyframes tremida {
+    0% {
+        transform: rotate(5deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
